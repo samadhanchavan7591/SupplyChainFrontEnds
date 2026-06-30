@@ -1,0 +1,38 @@
+/* Fade-in effect for card */
+.animate-fade-in {
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  /* Slide-up effect for heading */
+  .animate-slide-up {
+    animation: slideUp 1s ease-in-out;
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  /* Inputs with subtle glow on focus */
+  .animate-input input, .animate-input select {
+    transition: all 0.3s ease;
+  }
+  .animate-input input:focus, .animate-input select:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+    transform: scale(1.02);
+  }
+  
+  /* Button hover bounce */
+  .animate-button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  .animate-button:hover {
+    transform: translateY(-3px) scale(1.05);
+    background-color: #0069d9;
+  }
+  

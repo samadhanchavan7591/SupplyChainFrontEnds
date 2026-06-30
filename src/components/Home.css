@@ -1,0 +1,139 @@
+/* 1. Global Page Background */
+.amazon-style-home {
+    background-color: #eaeded; /* The classic Amazon light grey background */
+    min-height: 100vh;
+    padding-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* 2. Hero Slider Styling */
+  .hero-img {
+    height: 450px;
+    object-fit: cover;
+    /* Adds a slight fade at the bottom to blend with the grey background */
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+  }
+  
+  /* 3. The "Overlap" Effect */
+  .content-shift-up {
+    margin-top: -150px; /* Pulls the first row of cards up over the banner image */
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* 4. Section Containers */
+  .category-section {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .section-title {
+    font-weight: 700;
+    color: #232f3e; /* Amazon dark navy */
+    font-size: 1.4rem;
+  }
+  
+  .see-more {
+    text-decoration: none;
+    color: #007185; /* Amazon link teal */
+    font-size: 0.9rem;
+  }
+  
+  .see-more:hover {
+    color: #c45500; /* Amazon link hover orange */
+    text-decoration: underline;
+  }
+  
+  /* 5. Product Card Styling */
+  .amazon-card {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    background: #fff;
+  }
+  
+  .amazon-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .img-container {
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8; /* Light grey box for the product image */
+    border-bottom: 1px solid #eee;
+  }
+  
+  .img-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Keeps product proportions perfect */
+  }
+  
+  /* 6. Pricing and Buttons */
+  .price-tag {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #B12704; /* Amazon price red-orange */
+    margin: 5px 0;
+  }
+  
+  .buy-btn {
+    background-color: #ffd814; /* Amazon yellow button */
+    border: 1px solid #fcd200;
+    color: #111;
+    border-radius: 20px; /* Rounded pill shape */
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+  }
+  
+  .buy-btn:hover {
+    background-color: #f7ca00;
+    border-color: #f2c200;
+    color: #000;
+  }
+  
+  /* 7. Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero-img {
+      height: 250px;
+    }
+    .content-shift-up {
+      margin-top: -20px;
+    }
+  }
+  .hero-img {
+    height: 450px;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.product-image {
+    height: 160px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.transition-card {
+    transition: all 0.3s ease;
+}
+
+.transition-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12) !important;
+}
+
+.buy-btn:hover {
+    background-color: #e68a00 !important;
+}
+
+.section-title {
+    color: #232f3e;
+    letter-spacing: 0.5px;
+}

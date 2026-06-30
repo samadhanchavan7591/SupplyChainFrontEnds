@@ -1,0 +1,152 @@
+/* 1. Glassmorphism Effect */
+.main-navbar {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px); /* Blur background behind nav */
+    transition: all 0.3s ease-in-out;
+    padding: 12px 0;
+}
+
+/* 2. Logo Animation */
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+    color: #007bff !important;
+}
+
+/* 3. Link Underline Animation */
+.nav-link {
+    position: relative;
+    font-weight: 500;
+    color: #333 !important;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+/* 4. Animated Dropdown */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    animation: slideUp 0.4s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 5. Glowing Login Button */
+.btn-primary {
+    border-radius: 50px;
+    padding: 8px 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+}
+
+/* 6. Search Bar Polish */
+.form-control {
+    border-radius: 50px;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    width: 250px; /* Expand on focus */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.1);
+}
+/* Custom Header inside Dropdown */
+.dropdown-header-custom {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hover effects for items */
+.dropdown-item {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+    padding-left: 25px; /* Slight slide effect */
+}
+
+/* Special styling for Panels */
+.panel-link {
+    font-weight: 500;
+}
+
+.admin-link {
+    color: #d9534f !important; /* Reddish for Admin */
+}
+
+.query-link {
+    background-color: #e7f1ff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    margin: 5px 10px;
+}
+
+/* Search Box Styling */
+.search-input-box {
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    padding: 5px 15px;
+    outline: none;
+    transition: width 0.3s ease;
+    width: 180px;
+}
+
+.search-input-box:focus {
+    width: 220px;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.25);
+}
+
+.login-btn-custom {
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-weight: 600;
+}

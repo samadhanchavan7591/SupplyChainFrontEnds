@@ -1,0 +1,39 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full screen height */
+    background-color: #f4f7f6; /* Light gray professional background */
+}
+
+/* The actual Form styling */
+.login-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px; /* Limits width on large screens */
+    border-top: 5px solid #dc3545; /* This replaces your 'red' class with a clean accent */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Input styling */
+.input-group-custom input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group-custom input:focus {
+    border-color: #dc3545;
+    outline: none;
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.2);
+}
+
+/* Button spacing */
+.button-group button {
+    flex: 1;
+    margin: 0 5px;
+}
